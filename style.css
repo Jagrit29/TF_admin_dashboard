@@ -25,16 +25,11 @@
     background: ;
     left: -1px;
     transition: all 500ms linear;
-    border-right: 1px solid #E0E0E0;
 }
 /*#sidebar .z
 {
 display: none;
 }*/
-#sidebar.active
-{
-    border-right: 0px;
-}
 #sidebar.active .dash_text
 {
     display: none;
@@ -45,9 +40,10 @@ display: none;
     font-size: 15px!important;
     line-height: 20px!important;
     letter-spacing: .05em!important;
-    text-transform:uppercase;
+    text-transform:capitalize;
     color: #666666;
     padding: 15px 10px;
+    list-style-type: none;
     
 }
 .sidebutton
@@ -58,6 +54,30 @@ display: none;
     border-radius: 5px;
     margin-top: 18px;
     margin-left: 5px;
+}
+.navbar1-toggle{
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-right: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid #666666;
+    border-radius: 4px;
+}
+.navbutton
+{
+    padding: 10px;
+    border: px solid #E0E0E0;
+    border-radius: 5px;
+    margin-top: 18px;
+    margin-left: 5px;
+}
+.navbutton span
+{
+    background: #666666;
 }
 .sidebutton span
 {
@@ -100,7 +120,7 @@ display: none;
         margin-top: -10px;
     }
 }
-@media screen and (max-width: 368px)
+@media screen and (max-width: 375px)
 {
     .img1
     {
@@ -112,7 +132,7 @@ display: none;
         
     }
 }
-@media screen and (max-width: 330px)
+@media screen and (max-width: 335px)
 {
     .img1
     {
@@ -135,7 +155,103 @@ a:hover span
 {
     color: #AA1E2D;
 }
-#link1 , #link2 , #link3 , #link4 , #link5 , #link6
+#link1 , #link2 , #link3 , #link4 , #link5 , #link6 , #link7
 {
     text-decoration: none;
+}
+.rightpanel ul
+{
+    text-align: center;
+    list-style-position: inside;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table th
+{
+    padding: 5px;
+    border: 3px solid white;
+    font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif!important;
+    font-size: 15px!important;
+    line-height: 20px!important;
+    letter-spacing: .05em!important;
+    text-transform:capitalize;
+    color: white;
+    font-weight: 600;
+    
+}
+table td
+{
+     padding: 5px;
+     border: 3px solid white;
+}
+    
+tr:nth-child(even){background-color:#FDD5C9}
+tr:nth-child(odd){background-color:#FFECE6}
+
+th {
+  background-color: #FD7600;
+  color: white;
+}
+.rightpanel h3
+{
+    font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif!important;
+    font-size: 25px!important;
+    line-height: 20px!important;
+    letter-spacing: .05em!important;
+    text-transform:capitalize;
+    color:#fe6625;
+}
+
+.rightpanel h5
+{
+    font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif!important;
+    font-size: 15px!important;
+    line-height: 20px!important;
+    letter-spacing: .05em!important;
+    text-transform:none;
+    color: #666666;
+}
+.rightpanel ul
+{
+    font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif!important;
+    font-size: 15px!important;
+    line-height: 20px!important;
+    letter-spacing: .05em!important;
+    text-transform:none;
+    color: #666666;
+}
+
+@media screen and (max-width: 500px)
+{
+    /*.rightarea
+    {
+        width: 200px;
+    }*/
+}
+.aboutcompany h6, .conDetails
+{
+    font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif!important;
+    font-size: 13px!important;
+    line-height: 20px!important;
+    letter-spacing: .05em!important;
+    text-transform:none;
+    color: #666666;
+    padding: 0px;
+    margin: 0px;
+}
+.aboutcompany h4
+{
+    font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif!important;
+    font-size: 15px!important;
+    letter-spacing: .05em!important;
+    text-transform:none;
+    color: ;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 600;
+    text-decoration: underline;
+    padding-bottom: 2px;
+    
 }
